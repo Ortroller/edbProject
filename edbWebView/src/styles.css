@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root{
+    --little_text_color: #ffffffe8;
+    --headers_def_color: #000;
+    --almost_black_color:#262221;
+    --almost_almost_black_color:#322e2d;
+    --data_show_def_color: #00D196;
+}
+
+body {
+    height: 100vh;
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    background-color: var(--headers_def_color);
+}
+  
