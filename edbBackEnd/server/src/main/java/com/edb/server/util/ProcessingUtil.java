@@ -58,12 +58,11 @@ public class ProcessingUtil {
         int fftArrSize = fftArr.length;
         double[] phase = new double[fftArrSize];
 
-        for (int i = 0; i < fftArrSize; i++) {
+        for (int i = 0; i < fftArrSize; i++) { 
             double real = fftArr[i].getReal();
             double imaginary = fftArr[i].getImaginary();
 
-            // Calcula o arctan
-            phase[i] = ((Math.atan2(imaginary, real)*180)/Math.PI)-90;
+            phase[i] = Math.atan2(imaginary, real)*(180/Math.PI);
             
         }
 
@@ -115,7 +114,8 @@ public class ProcessingUtil {
     }
 
     public double calculateReactivePowerBy(double apparentPower, double realPower){
-        return Math.sqrt( Math.pow(apparentPower, 2) - Math.pow(realPower,2) );
+        Double returnValue = Math.sqrt( Math.pow(apparentPower, 2) - Math.pow(realPower,2));
+        return returnValue.isNaN() ? 0 : returnValue;
     }
     
     /**

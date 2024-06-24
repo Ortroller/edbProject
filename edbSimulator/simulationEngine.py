@@ -22,7 +22,7 @@ def generate_wave(gen_step: float,
 
 def generate_displaced_wave(gen_step: float,
                   frequency:float = 60,
-                  amplitude:float = 220,
+                  amplitude:float = 330,
                   show_statistics: bool = False,
                   delay:bool = False):
     

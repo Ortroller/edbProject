@@ -1,67 +1,61 @@
 {
-  "hash": "87263e06",
-  "configHash": "92565d3e",
+  "hash": "8a5f57bf",
+  "configHash": "e5a70270",
   "lockfileHash": "d6afa37e",
-  "browserHash": "5a059654",
+  "browserHash": "d64987cc",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "3724a273",
+      "fileHash": "e8db41f5",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "7bb0e9e2",
-      "needsInterop": false
-    },
-    "@angular/platform-browser": {
-      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
-      "file": "@angular_platform-browser.js",
-      "fileHash": "f4ae5fbe",
-      "needsInterop": false
-    },
-    "@angular/router": {
-      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
-      "file": "@angular_router.js",
-      "fileHash": "44fcd744",
-      "needsInterop": false
-    },
-    "@stomp/stompjs": {
-      "src": "../../../../../node_modules/@stomp/stompjs/esm6/index.js",
-      "file": "@stomp_stompjs.js",
-      "fileHash": "3154fa94",
-      "needsInterop": false
-    },
-    "@swimlane/ngx-charts": {
-      "src": "../../../../../node_modules/@swimlane/ngx-charts/fesm2020/swimlane-ngx-charts.mjs",
-      "file": "@swimlane_ngx-charts.js",
-      "fileHash": "c76238a0",
-      "needsInterop": false
-    },
-    "@canvasjs/angular-charts": {
-      "src": "../../../../../node_modules/@canvasjs/angular-charts/fesm2015/canvasjs-angular-charts.js",
-      "file": "@canvasjs_angular-charts.js",
-      "fileHash": "be7622f3",
-      "needsInterop": false
-    },
-    "uuid": {
-      "src": "../../../../../node_modules/uuid/dist/esm-browser/index.js",
-      "file": "uuid.js",
-      "fileHash": "4949c9de",
+      "fileHash": "29a3e235",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "b7bf9a74",
+      "fileHash": "8ea39844",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "f6c5d401",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "db4bab48",
+      "needsInterop": false
+    },
+    "@canvasjs/angular-charts": {
+      "src": "../../../../../node_modules/@canvasjs/angular-charts/fesm2015/canvasjs-angular-charts.js",
+      "file": "@canvasjs_angular-charts.js",
+      "fileHash": "77829dbd",
+      "needsInterop": false
+    },
+    "@stomp/stompjs": {
+      "src": "../../../../../node_modules/@stomp/stompjs/esm6/index.js",
+      "file": "@stomp_stompjs.js",
+      "fileHash": "9a36e861",
+      "needsInterop": false
+    },
+    "@swimlane/ngx-charts": {
+      "src": "../../../../../node_modules/@swimlane/ngx-charts/fesm2020/swimlane-ngx-charts.mjs",
+      "file": "@swimlane_ngx-charts.js",
+      "fileHash": "249a86a5",
       "needsInterop": false
     },
     "axios": {
       "src": "../../../../../node_modules/axios/index.js",
       "file": "axios.js",
-      "fileHash": "327eba16",
+      "fileHash": "9eb91379",
       "needsInterop": false
     }
   },

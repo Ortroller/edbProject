@@ -49,7 +49,6 @@ public class MqttClientService{
             this.messagingTemplate = messagingTemplate;
             instance = this;
             start();
-            log.info("MQTT configured. WS publisher is " + (lastDataProcessed != null? "not null" : "null"));
         }
     }
     
@@ -79,10 +78,6 @@ public class MqttClientService{
 
             mqttClient.subscribe(dataTopic);
             log.info("Subscribed to topic: " + dataTopic);
-
-            // MqttMessage mqttMessage = new MqttMessage(message.getBytes());
-            // mqttClient.publish(serverComTopic, "message");
-            // System.out.println("Published message: " + message);
 
             while (!stopThread) { // ENVIA PARA O TOPICO
                 if(lastDataProcessed.getIsNew()){

@@ -5,9 +5,6 @@ import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.apache.commons.math3.complex.Complex;
-import org.apache.commons.math3.transform.DftNormalization;
-import org.apache.commons.math3.transform.FastFourierTransformer;
 
 import com.edb.server.mqtt.model.ProcessedData;
 import com.edb.server.mqtt.model.RawData;
@@ -33,9 +30,10 @@ public class Callback implements MqttCallback {
         try{
 
             if(topic.trim().equals("data/raw") ){
+                String messagePayload = new String(message.getPayload());
 
                 RawData nodeData = serializer.fromJson(
-                    new String(message.getPayload()),
+                    messagePayload,
                     RawData.class
                 );
 

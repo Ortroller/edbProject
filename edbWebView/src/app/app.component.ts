@@ -74,9 +74,14 @@ export class AppComponent implements OnInit{
   _genSeriesFft(arr:any[]){
     let series:any[] = [];
 
-    for(let x=0; x < arr.length; x++){
+    series.push({
+      x: Math.sqrt((arr[0].real**2 + arr[0].imaginary**2)/arr.length),
+      y: 0
+    })
+
+    for(let x=1; x < (arr.length/2)+1; x++){
       series.push({
-        x: (Math.sqrt((arr[x].real**2) + (arr[x].imaginary**2))/(arr.length))*2,
+        x: (2*Math.sqrt( (arr[x].real**2) + (arr[x].imaginary**2) )/(arr.length)),
         y: x
       })
     }
@@ -190,3 +195,23 @@ export class AppComponent implements OnInit{
   }
 
 }
+
+
+// 285.79, 200.89, 85.41, -43.07, -165.00, -261.81, -318.76, -327.18, -285.79, -200.89, -85.41, 43.07, 165.00, 261.81, 318.76, 327.18
+
+// -245.24,
+// -142.07,
+// -17.27,
+// 110.16,
+// 220.81,
+// 297.85,
+// 329.55,
+// 311.07,
+// 245.24,
+// 142.07,
+// 17.27,
+// -110.16,
+// -220.81,
+// -297.85,
+// -329.55,
+// -311.07
