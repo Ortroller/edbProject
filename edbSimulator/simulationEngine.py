@@ -6,7 +6,7 @@ def generate_wave(gen_step: float,
                   amplitude:float = 220,
                   show_statistics: bool = False):
     
-    duration = 1/frequency
+    duration = (1/frequency)*3
     time = np.arange(0, duration, gen_step)  # using 1/1000.0 as the time step for smooth plotting
     tension = amplitude * np.sin(2 * np.pi * frequency * time)
     curr_random_val = (random.random() * 95) + 5
@@ -17,8 +17,10 @@ def generate_wave(gen_step: float,
           f'time_arr size = {len(time)}\n' + 
           f'signal size = {len(tension)}\n' + 
           f'frequency = {frequency}')
-        
-    return time, tension, current
+    
+    rand_offset = random.randint(0, len(tension)-16)
+
+    return time, tension[rand_offset:rand_offset+16], current[rand_offset:rand_offset+16]
 
 def generate_displaced_wave(gen_step: float,
                   frequency:float = 60,
@@ -29,9 +31,9 @@ def generate_displaced_wave(gen_step: float,
     if delay:
         phase_shift = np.pi / 2
     else:
-        phase_shift = -np.pi / 2
+        phase_shift = -np.pi / 6
     
-    duration = 1/frequency
+    duration = (1/frequency)*3
     time = np.arange(0, duration, gen_step)  # using 1/1000.0 as the time step for smooth plotting
     tension = amplitude * np.sin(2 * np.pi * frequency * time)
     curr_random_val = (random.random() * 95) + 5
@@ -45,6 +47,8 @@ def generate_displaced_wave(gen_step: float,
           f'time_arr size = {len(time)}\n' + 
           f'signal size = {len(tension)}\n' + 
           f'frequency = {frequency}')
-        
-    return time, tension, current
+    
+    rand_offset = random.randint(0, len(tension)-16)
+
+    return time, tension[rand_offset:rand_offset+16], current[rand_offset:rand_offset+16]
 

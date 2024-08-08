@@ -49,7 +49,7 @@ def generate_data(choice:int):
 
 def display_options():
     print("Bem-vindo ao simulador\nPor favor escolha uma característica para simulação:" + 
-          "\n0 - Resistivo\n1 - Indutivo\n2 - Capacitivo")
+          "\n0 - Resistivo\n1 - Capacitivo\n2 - Indutivo")
     
     simulation_opt = int(input())
 
@@ -60,7 +60,7 @@ def display_options():
     printlog(f"Opção escolhida: {simulation_opt}.")
     return simulation_opt
 
-def mainTread():
+def mainThread():
     client = mqttcli.Client()
 
     simulation_choice = display_options()
@@ -88,7 +88,7 @@ def mainTread():
 
 
 if __name__ == "__main__":
-    mainTread()
+    mainThread()
 
 
 

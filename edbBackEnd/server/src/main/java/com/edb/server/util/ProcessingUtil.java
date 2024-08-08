@@ -101,7 +101,8 @@ public class ProcessingUtil {
 
         // Calcular a soma do produto das amostras de corrente e tensão
         for (int i = 0; i < numSamples; i++) {
-            sum += currentSamples[i] * voltageSamples[i];
+            double sumTemp = currentSamples[i] * voltageSamples[i];
+            sum += sumTemp;
         }
 
         // Calcular a média das amostras para obter a potência real
