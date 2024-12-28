@@ -1,61 +1,61 @@
 {
-  "hash": "8a5f57bf",
+  "hash": "ca194daf",
   "configHash": "e5a70270",
-  "lockfileHash": "d6afa37e",
-  "browserHash": "d64987cc",
+  "lockfileHash": "ed64edae",
+  "browserHash": "af4c4496",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "e8db41f5",
+      "fileHash": "58448365",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "29a3e235",
+      "fileHash": "35df7246",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "8ea39844",
+      "fileHash": "3582a9fa",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "f6c5d401",
+      "fileHash": "9d625cc2",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "db4bab48",
+      "fileHash": "86de1ab1",
       "needsInterop": false
     },
     "@canvasjs/angular-charts": {
       "src": "../../../../../node_modules/@canvasjs/angular-charts/fesm2015/canvasjs-angular-charts.js",
       "file": "@canvasjs_angular-charts.js",
-      "fileHash": "77829dbd",
+      "fileHash": "d33269cd",
       "needsInterop": false
     },
     "@stomp/stompjs": {
       "src": "../../../../../node_modules/@stomp/stompjs/esm6/index.js",
       "file": "@stomp_stompjs.js",
-      "fileHash": "9a36e861",
+      "fileHash": "30f1de76",
       "needsInterop": false
     },
     "@swimlane/ngx-charts": {
       "src": "../../../../../node_modules/@swimlane/ngx-charts/fesm2020/swimlane-ngx-charts.mjs",
       "file": "@swimlane_ngx-charts.js",
-      "fileHash": "249a86a5",
+      "fileHash": "aee9a56a",
       "needsInterop": false
     },
     "axios": {
       "src": "../../../../../node_modules/axios/index.js",
       "file": "axios.js",
-      "fileHash": "9eb91379",
+      "fileHash": "5bb7407d",
       "needsInterop": false
     }
   },

@@ -1,0 +1,21 @@
+#voltage-current-graph {
+    height: 100%;
+    width: 100%;
+  }
+
+#fft-graph{
+    height: 100%;
+    width: 100%;
+}
+/*   
+  @media (max-width: 1000px) {
+    #voltage-current-graph {
+      height: 300px; 
+      width: 450px;
+    }
+
+    #fft-graph {
+        height: 300px; 
+        width: 450px;
+    }
+  } */

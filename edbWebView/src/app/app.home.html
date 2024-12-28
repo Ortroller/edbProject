@@ -26,9 +26,9 @@
             <ul>
                 <li><span>RMS Tensão</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.rms | number: '1.1-1'}}</span></li>
                 <li><span>Fator de potência (FP)</span> <span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.powerFactor | number: '1.3-3'}}</span></li>
-                <li><span>Potência real</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.realPower | number: '1.1-1'}} <span style="font-size: 14px;">W</span></span></li>
-                <li><span>Potência aparente</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.apparentPower | number: '1.1-1'}} <span style="font-size: 14px;">VA</span></span></li>
-                <li><span>Potência reativa</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.reactivePower | number: '1.1-1'}} <span style="font-size: 14px;">VA</span></span></li>
+                <li><span>Potência real</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.realPower | number: '1.1-1'}} <span>W</span></span></li>
+                <li><span>Potência aparente</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.apparentPower | number: '1.1-1'}} <span>VA</span></span></li>
+                <li><span>Potência reativa</span><span class="data-font" *ngIf="serverProcessedData">{{serverProcessedData.reactivePower | number: '1.1-1'}} <span>VA</span></span></li>
 
                 <li>
                     <span>Característica</span>

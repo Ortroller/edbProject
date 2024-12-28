@@ -6,6 +6,7 @@
     --almost_black_color:#262221;
     --almost_almost_black_color:#322e2d;
     --data_show_def_color: #00D196;
+    --min_width_size: 1300px;
 }
 
 body {

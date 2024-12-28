@@ -3,7 +3,9 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    height: 100%;
+    /* height: 100%;*/
+    height: fit-content;
+    min-width: 460px;
 }
 
 .header-container{
@@ -29,6 +31,8 @@
     height: 350px;
     width: 600px;
     align-self: center;
+    display: flex;
+
 }
 
 .fft-full-container{
@@ -92,6 +96,7 @@
   flex-direction: row;
   justify-content: space-around;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .grid-data-span{
@@ -220,3 +225,56 @@ input:checked + .slider:before {
 }
 
 /* ------ --------------------------- ------ */
+
+/* REPONSIVO */
+
+/* Estilos para telas menores ou iguais a 600px */
+@media screen and (max-width: 1300px) {
+
+  .plot-data-container{
+    flex-direction: column;
+  }
+
+  .chart-container{
+        height: 230px; 
+        width: 95%;
+        margin-bottom: 20px;
+  }
+
+  .grid-data-span > h3{
+    font-size: 15px;
+  }
+
+  .grid-data-span > span{
+    font-size: 10px;
+  }
+
+  .data-font{
+    font-size: 10px;
+  }
+
+  .grid-data-span > ul {
+    display: flex;
+    flex-wrap: wrap; /* Mantém o comportamento de quebra */
+    list-style-type: none;
+    justify-content: space-around; /* Alinha os itens de forma distribuída */
+    gap: 5px;
+  }
+  
+  .grid-data-span > ul > li {
+    font-size: 15px;
+    height: 45px;
+    width: 45%; /* Define 2 colunas com largura fixa */
+    margin-right: 5px;
+    box-sizing: border-box; /* Garante que o padding e border não afetem o tamanho do item */
+  }
+
+  .header-container{
+    height: 80px;
+  }
+
+  .header-container > h1{
+    font-size: 24px;
+  }
+  
+}

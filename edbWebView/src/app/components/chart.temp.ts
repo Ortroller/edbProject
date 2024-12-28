@@ -5,8 +5,9 @@ import {v4 as uuidv4, v4} from 'uuid';
 
 
 @Component({
-    selector: 'chart-component-voltage',
-    template: `<div style="height: 100%; width: 100%;" id="voltage-current-graph"> </div>`
+  selector: 'chart-component-voltage',
+  template: `<div id="voltage-current-graph"></div>`,
+  styleUrls: ['./css/chart-component-voltage.component.css'] 
 })
 export class ChartComponentexport implements OnInit{
 
@@ -106,7 +107,8 @@ export class ChartComponentexport implements OnInit{
 
 @Component({
   selector: 'chart-component-stake',
-  template: `<div style="height: 100%; width: 100%;" id="fft-graph"> </div>`
+  template: `<div id="fft-graph"> </div>`,
+  styleUrls: ['./css/chart-component-voltage.component.css'] 
 })
 export class ChartStakeComponentexport implements OnChanges, OnInit{
   @Input() inputData?: any[];
